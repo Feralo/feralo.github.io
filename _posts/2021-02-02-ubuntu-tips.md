@@ -1,6 +1,7 @@
 ---
 layout: posts
 title:  "Ubuntu advice"
+draft: true
 ---
 
 If you want to reboot to a console, just change the default runlevel.  On next boot, it will boot to a console.
