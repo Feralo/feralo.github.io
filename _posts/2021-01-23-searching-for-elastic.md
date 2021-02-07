@@ -11,8 +11,12 @@ Quick start
 1. download the file (elastic search)
 2. execute the file
 
-Alternatively, it looks like I have been able to run it with docker in the past with this command:
+Alternatively, it looks docker can do it too:
+
 `docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.10.1`
+
+
+Perhaps it would be best to just install the local package:
 
 ```wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.2-amd64.deb.sha512
 $ shasum -a 512 -c elasticsearch-7.10.2-amd64.deb.sha512
@@ -21,3 +25,6 @@ $ sudo /bin/systemctl daemon-reload
 $ sudo /bin/systemctl enable elasticsearch.service
 $ sudo /bin/systemctl start elasticsearch.service
 $ curl -X GET "localhost:9200/?pretty"```
+
+
+Any way you do it, it's best to just get started.
