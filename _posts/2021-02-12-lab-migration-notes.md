@@ -17,7 +17,7 @@ Per-interface:
  - declare which VLANs to tag
  
  ```
- interface 0/42
+interface 0/42
 storm-control broadcast level 30
 storm-control multicast level 30
 description 'You could descibe each interface'
