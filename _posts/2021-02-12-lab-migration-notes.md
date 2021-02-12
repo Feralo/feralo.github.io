@@ -16,7 +16,8 @@ Per-interface:
  - declare which VLANs to participate in
  - declare which VLANs to tag
  
- ```interface 0/42
+ ```
+ interface 0/42
 storm-control broadcast level 30
 storm-control multicast level 30
 description 'You could descibe each interface'
@@ -25,7 +26,6 @@ vlan pvid 42
 vlan participation include 42,203
 vlan tagging 203
 exit
-
 ```
 
 So in this example, a system plugging into the switch on port 42, would default participate in the 42 VLAN. Additionally (within the OS) an a VLAN interface could be defined to communicate on 203 vlan.
