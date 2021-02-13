@@ -2,11 +2,10 @@
 layout: posts
 title:  "Searching for elastic"
 ---
-https://www.elastic.co/webinars/getting-started-elasticsearch?baymax=default&elektra=docs&storm=top-video
 
-Seems like it could be easy to just grab the executable and start it (now that Java comes with the program). 
+After reviewing the [video Guide](https://www.elastic.co/webinars/getting-started-elasticsearch?baymax=default&elektra=docs&storm=top-video) on elastic's website, it seems like it could be easy to just grab the executable and start it (now that Java comes with the program). 
 
-Quick start
+## Quick start
 
 1. download the file (elastic search)
 2. execute the file
