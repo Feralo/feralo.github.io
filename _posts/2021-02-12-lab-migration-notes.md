@@ -52,5 +52,5 @@ Some useful settings would be the range of IP addresses to give out for each sub
 
 Finally `sudo service isc-dhcp-server restart` to apply the configuration.
 
-There are several [communtity](https://help.ubuntu.com/community/isc-dhcp-server) [guides](https://devtutorial.io/how-to-setup-dhcp-server-in-ubuntu-server-20-04.html) and [references](https://ubuntu.com/server/docs/network-dhcp) around on this topic, but they all seem really simple.
+There are several [communtity](https://help.ubuntu.com/community/isc-dhcp-server) [guides](https://devtutorial.io/how-to-setup-dhcp-server-in-ubuntu-server-20-04.html) and [references](https://ubuntu.com/server/docs/network-dhcp) around on this [topic](https://ubuntu.com/server/docs/network-dhcp), but they all seem really simple (but nothing is as authoritative as the [ISC page on DCHP](https://www.isc.org/dhcp/).
 
