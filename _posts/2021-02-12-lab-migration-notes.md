@@ -35,3 +35,22 @@ So in this example, a system plugging into the switch on port 42, would default 
 From the switch, there may be a command to show the mac address table (`show mac-addr-table`). Entries expire quickly, so you may need to run it a few times to get a sense of which MAC addresses are talking on which VLANs.
 
 Another way to see, is to query the network neighbor cache using `arp -an` (after doing something like `nmap`).
+
+## DHCP (Why configure each server?)
+
+Install the service on Ubuntu using apt:
+
+`sudo apt install isc-dhcp-server`
+
+Edit the configuration file:
+
+`vim /etc/dhcp/dhcpd.conf`
+
+Some useful settings would be the range of IP addresses to give out for each subnet, the default gateway, DNS and NTP servers. 
+
+**Note:** _the settings are slightly different for publicly routable addresses_
+
+Finally `sudo service isc-dhcp-server restart` to apply the configuration.
+
+There are several [communtity](https://help.ubuntu.com/community/isc-dhcp-server) [guides](https://devtutorial.io/how-to-setup-dhcp-server-in-ubuntu-server-20-04.html) and [references](https://ubuntu.com/server/docs/network-dhcp) around on this topic, but they all seem really simple.
+
