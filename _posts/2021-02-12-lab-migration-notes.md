@@ -48,6 +48,8 @@ Edit the configuration file:
 
 Some useful settings would be the range of IP addresses to give out for each subnet, the default gateway, DNS and NTP servers. 
 
+In Ubuntu 20, you will need to specify the interface (in [two places](https://askubuntu.com/a/1275120/1095652)).
+
 **Note:** _the settings are slightly different for publicly routable addresses_
 
 Finally `sudo service isc-dhcp-server restart` to apply the configuration.
