@@ -35,3 +35,7 @@ Perhaps it's best to just pick a path and get started.
 ### Collect Data
  
 [Auditd logs](https://www.elastic.co/guide/en/beats/filebeat/7.11/filebeat-module-auditd.html) could be a great place to start. Also, you might want to [install Metricbeat on the same server as Elasticsearch](https://www.elastic.co/guide/en/beats/metricbeat/7.11/metricbeat-installation-configuration.html) to monitor your server.
+
+## Configuration
+
+This might take the longest to get going. Fortunately, there is a good amount of documentation for configuring things like [enabling security](https://www.elastic.co/guide/en/elasticsearch/reference/7.11/get-started-enable-security.html).
