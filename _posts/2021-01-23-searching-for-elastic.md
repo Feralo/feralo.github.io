@@ -28,9 +28,7 @@ $ curl -X GET "localhost:9200/?pretty"
 ```
 Perhaps it's best to just pick a path and get started.
 
-----
-
- ## For Ubuntu 20.04
+ ## Ubuntu
  
  [Install elastic](https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html) then [install kibana](https://www.elastic.co/guide/en/kibana/current/deb.html). Restart both services and visit [the elastic search page on localhost](http://localhost:5601).
  
