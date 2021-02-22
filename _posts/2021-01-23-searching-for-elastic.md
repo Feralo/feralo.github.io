@@ -38,4 +38,4 @@ Perhaps it's best to just pick a path and get started.
 
 ### Configuration
 
-This might take the longest to get going. Fortunately, there is a good amount of documentation for configuring things like [enabling security](https://www.elastic.co/guide/en/elasticsearch/reference/7.11/get-started-enable-security.html).
+This might take the longest to get going. Fortunately, there is a good amount of documentation for configuring things like [observability](https://ela.st/observability-documentation) and [enabling security](https://www.elastic.co/guide/en/elasticsearch/reference/7.11/get-started-enable-security.html).
