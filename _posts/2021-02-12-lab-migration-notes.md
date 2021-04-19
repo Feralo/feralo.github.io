@@ -4,10 +4,8 @@ title:  "Lab migration notes"
 draft: true
 ---
 
-Having been around network operations people and planning system migrations, I have used VLANs in conversation and understood the concept at a high level but had not had the chance to really dig into the implementations until recently.
-
 ## VLANs by design
-VLANs need to be defined somewhere by an ID, for example: 42. If a parent organization is defining networks by VLANs, there is already an existing ID. When I plug in a switch to a data center, they tell me what network VLANs they have assigned to me and I configure the switch accordingly. If I want to define my own VLANs, then I would set up a router with 2 interfaces (_inside_ and _outside_), define my own VLAN IDs and tell the switch to keep track of those.
+VLANs need to be defined somewhere by an ID, for example: 42. If a parent organization is defining networks by VLANs, there is already an existing ID. When I plug in a switch to a data center, they tell me what network VLANs they have assigned to me and I configure the switch accordingly. If I want to define my own VLANs, then I would set up a router with 2 interfaces (_inside_ and _outside_), define my own VLAN IDs and tell the switch to keep track of those. If I can run cables from one switch to the next, I can pass my own VLAN IDs around. If I need to pass VLAN IDs over someone else's wires, I need to communicate the VLAN ID so that we don't pick the same number.
 
 On the switch we can define VLANs in a database.
 
@@ -28,7 +26,7 @@ vlan tagging 203
 exit
 ```
 
-So in this example, a system plugging into the switch on port 42, would default participate in the 42 VLAN. Additionally (within the OS) an a VLAN interface could be defined to communicate on 203 vlan.
+So in this example, a system plugging into the switch on port 42, would default participate in the 42 VLAN. Additionally (within the OS) an interface could be defined to communicate on 203 vlan (since participation is allowed and the frames will be tagged).
 
 ### How can I see who is communicating on which VLAN?
 
